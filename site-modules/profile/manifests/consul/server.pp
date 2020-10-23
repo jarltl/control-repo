@@ -15,6 +15,7 @@ class profile::consul::server {
       'server'           => true,
       'retry_join'       => [ $::serverip ],
 	  'ui'				 => true,
+	  'bind_addr'        => '127.0.0.1:8300',
     },
     require     => Package['unzip'],
   }
