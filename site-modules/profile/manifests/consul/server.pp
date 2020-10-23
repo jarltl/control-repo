@@ -8,7 +8,7 @@ class profile::consul::server {
     version     => '1.6.2',
     config_hash => {
       'bootstrap_expect' => 3,
-	  'client_addr'      => '0.0.0.0',
+	  'client_addr'      => '$::serverip',
       'data_dir'         => '/opt/consul',
       'datacenter'       => 'NTNU',
       'log_level'        => 'INFO',
