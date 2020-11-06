@@ -56,3 +56,11 @@ mod 'dalen-dnsquery',         '3.0.0'
 # Updates
 mod 'puppet-unattended_upgrades', '4.0.0'
 
+#project 
+mod 'puppetlabs_spec_helper'
+    :git => 'https://github.com/puppetlabs/puppetlabs_spec_helper'
+
+
+
+
+
